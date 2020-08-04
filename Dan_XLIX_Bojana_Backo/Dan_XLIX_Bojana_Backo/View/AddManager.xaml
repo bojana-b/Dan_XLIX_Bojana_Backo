@@ -10,27 +10,29 @@
         <GroupBox Header="Personal Data" Margin="10" Padding="10" Background="AntiqueWhite">
             <StackPanel>
                 <TextBlock>First name:</TextBlock>
-                <TextBox Background="RosyBrown" Foreground="White"/>
+                <TextBox Background="RosyBrown" Foreground="White" Text="{Binding Manager.Name}"/>
                 <TextBlock>Last name:</TextBlock>
-                <TextBox Background="RosyBrown" Foreground="White"/>
+                <TextBox Background="RosyBrown" Foreground="White" Text="{Binding Manager.Surname}"/>
                 <TextBlock>E-mail:</TextBlock>
-                <TextBox Background="RosyBrown" Foreground="White"/>
+                <TextBox Background="RosyBrown" Foreground="White" Text="{Binding Manager.Email}"/>
                 <TextBlock>Username:</TextBlock>
-                <TextBox Background="RosyBrown" Foreground="White"/>
+                <TextBox Background="RosyBrown" Foreground="White" Text="{Binding Manager.Username}"/>
                 <TextBlock>Password:</TextBlock>
-                <TextBox Background="RosyBrown" Foreground="White"/>
+                <TextBox Background="RosyBrown" Foreground="White" Text="{Binding Manager.Password}"/>
                 <TextBlock>Hotel Floor</TextBlock>
-                <ComboBox Background="RosyBrown" Foreground="White">
+                <ComboBox Background="RosyBrown" Foreground="White"
+                          SelectedItem="{Binding Manager.Floor}">
                     <ComboBoxItem Background="RosyBrown" Foreground="White">First</ComboBoxItem>
                     <ComboBoxItem Background="RosyBrown" Foreground="White">Second</ComboBoxItem>
                     <ComboBoxItem Background="RosyBrown" Foreground="White">Third</ComboBoxItem>
                     <ComboBoxItem Background="RosyBrown" Foreground="White">Fourth</ComboBoxItem>
                     <ComboBoxItem Background="RosyBrown" Foreground="White">Fifth</ComboBoxItem>
                 </ComboBox>
-                <TextBlock>Work experience:</TextBlock>
-                <TextBox Background="RosyBrown" Foreground="White" Text="0"/>
+                <TextBlock>Work Experience:</TextBlock>
+                <TextBox Background="RosyBrown" Foreground="White" Text="{Binding Manager.Experience}"/>
                 <TextBlock>Professional Qualifications Level:</TextBlock>
-                <ComboBox Background="RosyBrown" Foreground="White">
+                <ComboBox Background="RosyBrown" Foreground="White"
+                          SelectedItem="{Binding Manager.Qualifications}">
                     <ComboBoxItem Background="RosyBrown" Foreground="White">I</ComboBoxItem>
                     <ComboBoxItem Background="RosyBrown" Foreground="White">II</ComboBoxItem>
                     <ComboBoxItem Background="RosyBrown" Foreground="White">III</ComboBoxItem>
@@ -39,7 +41,7 @@
                     <ComboBoxItem Background="RosyBrown" Foreground="White">VI</ComboBoxItem>
                     <ComboBoxItem Background="RosyBrown" Foreground="White">VII</ComboBoxItem>
                 </ComboBox>
-                <Button Margin="80, 20">Save</Button>
+                <Button  Margin="80, 20">Save</Button>
                 <Button Margin="80, 10">Cancel</Button>
             </StackPanel>
         </GroupBox>

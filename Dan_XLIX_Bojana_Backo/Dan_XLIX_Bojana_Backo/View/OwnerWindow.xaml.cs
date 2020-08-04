@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dan_XLIX_Bojana_Backo.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,7 @@ namespace Dan_XLIX_Bojana_Backo.View
         public OwnerWindow()
         {
             InitializeComponent();
+            this.DataContext = new OwnerWindowViewModel(this);
         }
     }
 }

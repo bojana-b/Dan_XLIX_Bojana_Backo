@@ -5,22 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dan_XLIX_Bojana_Backo.View"
         mc:Ignorable="d"
-        Title="OWNER" Height="400" Width="300" FontSize="14" Background="RosyBrown">
+        Title="OWNER" Height="350" Width="300" FontSize="14" Background="RosyBrown">
     <Grid>
         <GroupBox Header="Personal Data" Margin="10" Padding="10" Background="AntiqueWhite">
             <StackPanel>
                 <TextBlock>First name:</TextBlock>
-                <TextBox Background="RosyBrown" Foreground="White"/>
+                <TextBlock Background="RosyBrown" Foreground="White" Text="Petar"/>
                 <TextBlock>Last name:</TextBlock>
-                <TextBox Background="RosyBrown" Foreground="White"/>
+                <TextBlock Background="RosyBrown" Foreground="White" Text="Petrovic"/>
                 <TextBlock>E-mail:</TextBlock>
-                <TextBox Background="RosyBrown" Foreground="White"/>
+                <TextBlock Background="RosyBrown" Foreground="White" Text="petar.petrovic@email"/>
                 <TextBlock>Username:</TextBlock>
                 <TextBlock Background="RosyBrown" Foreground="White" Text="Vlasnik2020"/>
                 <TextBlock>Password:</TextBlock>
-                <TextBox Background="RosyBrown" Foreground="White" Text="Vlasnik2020"/>
+                <TextBlock Background="RosyBrown" Foreground="White" Text="Vlasnik2020"/>
                 <StackPanel Orientation="Horizontal" Margin="20">
-                    <Button HorizontalAlignment="Left">Add Manager</Button>
+                    <Button HorizontalAlignment="Left" Command="{Binding AaddManager, UpdateSourceTrigger=PropertyChanged}">Add Manager</Button>
                     <Button HorizontalAlignment="Right">Add Employee</Button>
                 </StackPanel>
                 
